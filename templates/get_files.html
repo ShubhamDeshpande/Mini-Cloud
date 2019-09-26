@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown</title>
+</head>
+<body>
+<form action="download" method="POST">
+<select name="selected_file">
+    {% for file in file_list %}
+    <option value= "{{file}}">{{file}}</option>
+    {% endfor %}
+</select>
+<input type="submit"/>
+</form>
+</body>
+</html>
